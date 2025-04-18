@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Mail Finder",
+  "version": "1.0",
+  "description": "Fetch recent Gmail emails",
+  "permissions": ["identity", "storage"],
+  "host_permissions": ["https://www.googleapis.com/"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png",
+      "256": "icon.png"
+    },
+    "icons": {
+          "16": "icon.png",
+          "32": "icon.png",
+          "48": "icon.png",
+          "128": "icon.png"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
